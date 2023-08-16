@@ -5,19 +5,22 @@ int main()
 {
     int number;
  
-    printf("Entrer le nombre de branches voulu");
+    printf("Entrer le nombre de branches voulu"\n);
     scanf("%s", number);
-if(number<0){
-printf("ERREUR! Entrer un nombre valide");
-scanf("%s", number);
+
+if(number<0){ 
+    printf("ERREUR! Entrer un nombre valide");
+    printf("Entrer le nombre de branches voulu"\n);
+    scanf("%s", number);
 }
 else if(number==0){
-printf("/dev/null");
+   printf("/dev/null");
 }
-else{
+else if{(number>0){
+   //code tracé de l'étoile
+}
+else {
 
-}
-    
- 
+  }
     return 0;
 }

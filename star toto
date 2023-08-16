@@ -1,25 +1,23 @@
-#include <stdlib.h> /* EXIT_SUCCESS */
-#include <stdio.h> /* printf */
+#include <stdio.h>
+#include <stdlib.h>
+ 
 int main()
 {
-/* declaration et initialisation variables */
-int cote = 2; /* cote du demi-carré en nb d’etoiles */
-3
-int i; /* var. de boucle */
-int j; /* var. de boucle */
-printf("Affichage d’un demi-carre d’etoiles de cote %d.\n",cote);
-for(i = 1;i <= cote;i = i + 1) /* chaque numero de ligne d’étoiles */
-{
-/* affiche autant d’etoiles que le numero de ligne */
-for(j = 0;j < i;j = j + 1) /* chaque colonne d’etoiles */
-{
-/* affiche une etoile */
-printf("*");
+    int number;
+ 
+    printf("Entrer le nombre de branches voulu");
+    scanf("%s", number);
+if(number<0){
+printf("ERREUR! Entrer un nombre valide");
+scanf("%s", number);
 }
-/* j >= i */
-/* passe a la ligne suivante */
-printf("\n");
+else if(number==0){
+printf("/dev/null");
 }
-/* i > cote */
-return EXIT_SUCCESS;
+else{
+
+}
+    
+ 
+    return 0;
 }
